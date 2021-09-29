@@ -10,8 +10,9 @@
 }
 @media only screen and (max-width:500px) {
   .Card{
-    margin : auto;
-    margin-top: 20px;
+    width: 70%;
+     margin : auto;
+      margin-top: 20px;
   }
 }
 
