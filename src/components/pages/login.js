@@ -7,6 +7,7 @@ function LoginComp(params) {
     const [id, setId] = useState("");
     const [worngId, setWorngId] = useState(null);
     const [, setUser] = useState();
+    const [idInput, setIdInput] = useState();
 
     const sendForm = async (e) => {
         e.preventDefault();
@@ -43,6 +44,7 @@ function LoginComp(params) {
                     <Form onSubmit={sendForm}>
                         <Form.Label>  Enter your ID number</Form.Label>
                         <Form.Control
+                            value={idInput}    
                             type="text"
                             required
                             maxLength="9"
@@ -59,10 +61,10 @@ function LoginComp(params) {
                 <ListGroup.Item variant="primary">
                     ID list 
                 </ListGroup.Item>
-                <ListGroup.Item action>
+                <ListGroup.Item action onClick={()=> setIdInput("022543345")}>
                     Shift manager example - 022543345
                 </ListGroup.Item>
-                <ListGroup.Item action>
+                <ListGroup.Item action onClick={()=> setIdInput("316543210")}>
                     Seller example - 316543210
                 </ListGroup.Item>
             </ListGroup>
