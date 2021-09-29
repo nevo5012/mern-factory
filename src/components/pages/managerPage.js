@@ -24,6 +24,7 @@ function ManagerPageComp(params) {
                 </Card.Body>
                 <Card.Footer className="text-muted">manager manu</Card.Footer>
             </Card>
+            
         </>
     )
 }
